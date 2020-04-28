@@ -72,7 +72,7 @@ if (!args._.length || help) {
 }
 
 if (excludePath) {
-  exclude.push(getExcludeFunction(excludePath, cwd));
+  exclude.push(getExcludeFunction(cwd, excludePath));
 }
 
 // Validate command or outpipe is specified.
